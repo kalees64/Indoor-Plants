@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Home Plants</title>
+    <link rel="stylesheet" href="../static/css/style3.css">
+    <script src="https://kit.fontawesome.com/37b708b5dd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+    <header>
+        <nav class="navbar">
+            <a href="home.html">HOME</a>
+            <a href="admin.html">PLANTS</a>
+            <a href="guide.html">GUIDES</a>
+            <a href="#Profile"><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </header>
+    <img src="../static/images/guideimg1.png" alt="Giide Image" width="450px" height="550px">
+    <h2><i class="fa-sharp fa-solid fa-leaf"></i>INDOOR PLANTS</h2><br><br><br><br><br><br><br><br><br><br>
+    <h1>CARE GUIDE</h1><br>
+    <p>Knowing how much you guys love plants too.</p>
+    <p>we decide to put together a plant guide. something for you.</p><br>
+    <form action="/guide" method="post" target="_blank">
+        <select name="indoor_plants" id="indoor_plants">
+            <option value="coral_berry" name="coral_berry">coral berry</option>
+            <option value="money_tree">money tree</option>
+            <option value="philodendron">philodendron</option>
+            <option value="chinese_evergreen">chinese evergreen</option>
+            <option value="spider_plant">spider plant</option>
+            <option value="staghorn_fern">staghorn fern</option>
+            <option value="orchid">orchid</option>
+            <option value="peace_lily">piece lily</option>
+            <option value="jade_plant">jade plant</option>
+            <option value="string_of_hearts">string of hearts</option>
+        </select>
+    <input type="submit" value="EXPLORE MORE" class="exp">
+    </form>
+    <h3>{{msg}}</h3>
+    </div>
+    </body>
+    </html>
