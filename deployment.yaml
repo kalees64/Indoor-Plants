@@ -1,0 +1,20 @@
+ apiVersion: apps/v1
+ kind: Deployment
+ metadata:
+   name: iplant
+ spec:
+   replicas: 5
+   selector:
+     matchLabels:
+       app: iplant
+   template:
+     metadata:
+       labels:
+         app: iplant
+     spec:
+       containers:
+       - name: iplant
+         image: us.icr.io/iplant/indoorplant
+         imagePullPolicy: Always
+         ports:
+         - containerPort: 5000
